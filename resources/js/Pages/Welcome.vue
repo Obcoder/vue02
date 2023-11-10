@@ -31,7 +31,7 @@ defineProps({
             </div>
 
             <div class="mt-16">
-                <h1>
+                <h1 class="text-3xl font-bold text-red-500">
                     УРА!!! РАБОТАЕТ!!!
                 </h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
