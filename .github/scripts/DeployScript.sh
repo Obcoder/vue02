@@ -1,0 +1,14 @@
+#!/bin/sh set -e
+echo "Deploying application ..."
+# maintenance mode php artisan down
+git stash
+git config pull.rebase true git pull origin main
+COMPOSER_ALLOW_SUPERUSER=1 composer install --no-interaction --prefer-dist --optimize-autoloader
+npm install npm run build
+php artisan migrate --force
+php artisan optimize
+chmod -R 777 storage bootstrap/cache
+# Reload PHP to update opcache
+echo "" | sudo -S service php8.1-fpm reload
+# Exit maintenance mode php artisan up
+echo "Application deployed!"
