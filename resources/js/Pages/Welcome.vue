@@ -40,7 +40,7 @@ defineProps({
                         <button class="bg-blue-500 rounded hover:bg-gray-500">push me</button>
                     </p>
                 </section>
-                <div class="columns-2">
+                <div class="columns-3">
                     <p>Well, let me tell you something, ...</p>
                     <p class="break-after-column">Sure, go ahead, laugh...</p>
                     <p>Maybe we can live without...</p>
