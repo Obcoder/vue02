@@ -40,6 +40,12 @@ defineProps({
                         <button class="bg-blue-500 rounded hover:bg-gray-500">push me</button>
                     </p>
                 </section>
+                <div class="columns-2">
+                    <p>Well, let me tell you something, ...</p>
+                    <p class="break-after-column">Sure, go ahead, laugh...</p>
+                    <p>Maybe we can live without...</p>
+                    <p>Look. If you think this is...</p>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                     <a href="https://laravel.com/docs" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                         <div>
