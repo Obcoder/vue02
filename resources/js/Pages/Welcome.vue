@@ -24,12 +24,6 @@ defineProps({
         <article>
             <slot />
         </article>
-        <article>
-            Май ли уже расцвел над городом,
-            плачет ли, как побитый, хмуренький декабрик, -
-            весь год эта пухлая морда
-            маячит в дымах фабрик.
-        </article>
     </main>
 
     <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
@@ -173,6 +167,14 @@ defineProps({
                 </div>
             </div>
         </div>
+    </div>
+    <div>
+        <aside>
+            Май ли уже расцвел над городом,
+            плачет ли, как побитый, хмуренький декабрик, -
+            весь год эта пухлая морда
+            маячит в дымах фабрик.
+        </aside>
     </div>
 </template>
 
