@@ -50,7 +50,7 @@ defineProps({
                     <p>Maybe we can live without...</p>
                     <p>Look. If you think this is...</p>
                 </div>
-                <div class="grid grid-cols-4 gap-1 bg-red-100">
+                <div class="grid grid-cols-4 gap-3 bg-red-100">
                     <div>basa</div>
                     <div>flounder</div>
                     <div>hake</div>
