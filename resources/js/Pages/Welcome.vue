@@ -15,10 +15,11 @@ defineProps({
     <Head title="" />
 
     <main>
-        <header>
+        <header bg-slate-400>
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
+            <Link href="/cities">Cities</Link>
         </header>
         <article>
             <slot />
