@@ -19,7 +19,7 @@ defineProps({
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
-            <Link href="/cities">Cities</Link>
+            <Link href="/countries">Countries</Link>
         </header>
         <article>
             <slot />
@@ -149,10 +149,10 @@ defineProps({
                     </div>
                     <div>
                         <p>
-                            Май ли уже расцвел над городом,
-                            плачет ли, как побитый, хмуренький декабрик, -
-                            весь год эта пухлая морда
-                            маячит в дымах фабрик.
+                            Май ли уже расцвел над городом,<br/>
+                            плачет ли, как побитый, хмуренький декабрик, -<br/>
+                            весь год эта пухлая морда<br/>
+                            маячит в дымах фабрик.<br/>
                         </p>
                     </div>
                 </div>
