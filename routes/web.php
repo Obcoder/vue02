@@ -36,3 +36,4 @@ Route::middleware([
 });
 
 Route::get('/countries/', [\App\Http\Controllers\CountryController::class, 'index'])->name('countries');
+Route::get('/regions/', [\App\Http\Controllers\RegionController::class, 'index'])->name('regions');

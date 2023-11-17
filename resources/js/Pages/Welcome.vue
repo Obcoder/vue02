@@ -23,6 +23,9 @@ defineProps({
                 <li>
                     <Link href="/countries">Countries</Link>
                 </li>
+                <li>
+                    <Link href="/regions">Regions</Link>
+                </li>
             </ul>
         </header>
         <article>

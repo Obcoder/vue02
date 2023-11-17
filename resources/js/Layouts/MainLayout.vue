@@ -4,6 +4,7 @@ import {Link} from "@inertiajs/vue3";
 defineProps({
     title: String,
 });
+
 </script>
 
 <template>
@@ -19,6 +20,11 @@ defineProps({
                     <li>
                         <Link href="/countries">
                             Страны
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/regions">
+                            Regions
                         </Link>
                     </li>
                 </ul>
