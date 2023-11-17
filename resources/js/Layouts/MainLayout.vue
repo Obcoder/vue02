@@ -1,21 +1,21 @@
 <template>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <Link href="/">
-                        Home
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/countries">
-                        Страны
-                    </Link>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <main>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <Link href="/">
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/countries">
+                            Страны
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <div>
             <div class="container mx-auto">
                 <slot />
