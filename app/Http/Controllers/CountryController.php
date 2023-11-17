@@ -16,6 +16,9 @@ class CountryController extends Controller
     {
         $data = [
             'title' => 'Страны',
+            'countries' => [
+                'Россия', 'Китай', 'Бразилия',
+            ],
         ];
 
         return Inertia::render('countries', $data);
