@@ -12,7 +12,7 @@ defineProps({
         <header>
             <nav>
                 <ul class="flex flex-row">
-                    <li>
+                    <li class="mr-3 bg-yellow-300">
                         <Link href="/">
                             Home
                         </Link>
