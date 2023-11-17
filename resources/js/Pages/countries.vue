@@ -1,18 +1,27 @@
 <template>
-    <header></header>
-    <main>
-        <div>
+    <MainLayout>
+        <main>
             <div>
-                Россия
+                <div>
+                    Россия
+                </div>
             </div>
-        </div>
-    </main>
-    <footer></footer>
+        </main>
+    </MainLayout>
 </template>
 
 <script>
+import MainLayout from "@/Layouts/MainLayout.vue";
+
 export default {
-    name: "countries"
+    props: {
+        title: String,
+    },
+    // components:{
+    //     MainLayout,
+    // },
+    name: "countries",
+    layout: MainLayout,
 }
 </script>
 

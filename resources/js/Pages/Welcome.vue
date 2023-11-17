@@ -16,10 +16,14 @@ defineProps({
 
     <main>
         <header bg-slate-400>
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
-            <Link href="/countries">Countries</Link>
+            <ul>
+                <li>
+                    <Link href="/">Home</Link>
+                </li>
+                <li>
+                    <Link href="/countries">Countries</Link>
+                </li>
+            </ul>
         </header>
         <article>
             <slot />

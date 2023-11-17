@@ -34,3 +34,5 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+Route::get('/countries/', [\App\Http\Controllers\CountryController::class, 'index'])->name('countries');
