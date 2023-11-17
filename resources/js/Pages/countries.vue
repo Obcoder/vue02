@@ -3,7 +3,7 @@
     <MainLayout>
         <main>
             <div>
-                <div v-for="item in counties" class="bg-amber-950 text-amber-50">
+                <div v-for="item in countries" class="bg-amber-950 text-amber-50">
                     {{item}}
                 </div>
             </div>
@@ -17,7 +17,7 @@ import MainLayout from "@/Layouts/MainLayout.vue";
 export default {
     props: {
         title: String,
-        counties: Array,
+        countries: Array,
     },
     // components:{
     //     MainLayout,
