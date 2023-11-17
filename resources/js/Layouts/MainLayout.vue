@@ -17,12 +17,12 @@ defineProps({
                             Home
                         </Link>
                     </li>
-                    <li>
+                    <li class="mr-3 bg-yellow-300">
                         <Link href="/countries">
                             Страны
                         </Link>
                     </li>
-                    <li>
+                    <li class="mr-3 bg-yellow-300">
                         <Link href="/regions">
                             Regions
                         </Link>

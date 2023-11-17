@@ -1,4 +1,5 @@
 <template>
+    <Head title="{{title}}" />
     <MainLayout>
         <h1>
             Регионы
@@ -20,6 +21,7 @@ export default {
     components: {MainLayout},
     props: {
         regions: Array,
+        title: String,
     }
 }
 </script>

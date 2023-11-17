@@ -16,7 +16,7 @@ class RegionController extends Controller
     {
         $data = [
             'title' => 'Регионы',
-            'regions' => ['Адыгея', 'Башкортостан', 'Бурятия', 'Алтай', 'Дагестан'],
+            'regions' => ['Адыгея', 'Башкортостан', 'Бурятия', 'Алтай', 'Дагестан', 'Ингушетия'],
         ];
 
         return Inertia::render('regions', $data);

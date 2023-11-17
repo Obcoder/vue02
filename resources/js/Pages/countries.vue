@@ -1,4 +1,5 @@
 <template>
+    <Head title="{{title}}" />
     <MainLayout>
         <main>
             <div>
