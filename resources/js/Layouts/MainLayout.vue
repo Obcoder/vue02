@@ -1,3 +1,11 @@
+<script setup>
+import {Link} from "@inertiajs/vue3";
+
+defineProps({
+    title: String,
+});
+</script>
+
 <template>
     <main>
         <header>
@@ -25,15 +33,6 @@
     <footer></footer>
 
 </template>
-
-<script>
-import {Link} from "@inertiajs/vue3";
-
-export default {
-    name: "MainLayout",
-    components: Link,
-}
-</script>
 
 <style scoped>
 
