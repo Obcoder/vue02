@@ -14,11 +14,11 @@ class CountryController extends Controller
      */
     public function index()
     {
+        $countries = country::get();
+
         $data = [
             'title' => 'Страны',
-            'countries' => [
-                'Россия', 'Китай', 'Бразилия',
-            ],
+            'countries' => $countries,
         ];
 
         return Inertia::render('countries', $data);

@@ -22,7 +22,8 @@ export default {
     props: {
         regions: Array,
         title: String,
-    }
+    },
+    layout: MainLayout,
 }
 </script>
 

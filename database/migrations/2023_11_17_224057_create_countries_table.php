@@ -13,8 +13,14 @@ return new class extends Migration
     {
         Schema::create('countries', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
             $table->string('name');
+            $table->string('flag')->nullable();
+            $table->string('coatofarms')->nullable();
+            $table->double('area')->nullable();
+            $table->string('callingcode')->nullable();
+            $table->string('iso3166code')->nullable();
         });
     }
 
