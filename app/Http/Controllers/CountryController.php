@@ -21,7 +21,12 @@ class CountryController extends Controller
             'countries' => $countries,
         ];
 
-        return Inertia::render('countries', $data);
+        return Inertia::render('countries', $data)
+            ->withViewData(
+                [
+                    'title' => 'Страны',
+                ]
+            );
     }
 
     /**
@@ -37,7 +42,19 @@ class CountryController extends Controller
      */
     public function store(StorecountryRequest $request)
     {
-        //
+//        dd($request->all());
+
+        $validated = $request->validated();
+//        $instance = $this->creationRoutine($validated, 'News');
+
+        $newcountry = \App\Http\Resources\Country::create($validated);
+
+        dd($newcountry);
+
+//        return Inertia::render('API/Latest/GetLatest', [
+//            'input' => $instance,
+//            'model' => 'News'
+//        ]);
     }
 
     /**

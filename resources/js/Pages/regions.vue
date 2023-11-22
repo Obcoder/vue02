@@ -1,5 +1,7 @@
 <template>
-    <Head title="{{title}}" />
+    <Head>
+        <title>{{title}}</title>
+    </Head>
     <MainLayout>
         <h1>
             Регионы
@@ -11,6 +13,7 @@
 </template>
 
 <script>
+import {Head} from "@inertiajs/vue3";
 import MainLayout from "@/Layouts/MainLayout.vue";
 
 // defineProps({
@@ -18,7 +21,7 @@ import MainLayout from "@/Layouts/MainLayout.vue";
 // });
 export default {
     name: "regions",
-    components: {MainLayout},
+    components: {MainLayout, Head},
     props: {
         regions: Array,
         title: String,
