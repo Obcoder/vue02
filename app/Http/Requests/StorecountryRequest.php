@@ -27,6 +27,7 @@ class StorecountryRequest extends FormRequest
             "name" => "required",
             "area" => "required",
             "callingcode" => "required",
+            "iso3166code" => "required",
         ];
     }
 }

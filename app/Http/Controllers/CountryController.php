@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorecountryRequest;
 use App\Http\Requests\UpdatecountryRequest;
 use App\Models\country;
+use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 class CountryController extends Controller
@@ -12,14 +13,20 @@ class CountryController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $countries = country::get();
+        $like = $request->search;
+
+        $countries = country::where('name', 'like', '%'.$like.'%')
+            ->orderBy('created_at', 'desc')
+            ->get();
 
         $data = [
             'title' => 'Страны',
             'countries' => $countries,
         ];
+
+//        dd($countries);
 
         return Inertia::render('countries', $data)
             ->withViewData(
@@ -47,9 +54,30 @@ class CountryController extends Controller
         $validated = $request->validated();
 //        $instance = $this->creationRoutine($validated, 'News');
 
-        $newcountry = \App\Http\Resources\Country::create($validated);
+//        $newcountry = \App\Http\Resources\Country::create($validated);
 
-        dd($newcountry);
+//        $newcountry = StorecountryRequest::create($validated);
+
+        $newcountry = country::create($validated);
+
+//        dd($newcountry);
+
+//        $data = [
+//            'title' => 'Страны',
+//            'countries' => $countries,
+//        ];
+
+//        return Inertia::render('countries', $data)
+//            ->withViewData(
+//                [
+//                    'title' => 'Страны',
+//                ]
+//            );
+
+        return redirect()->back();
+//        return redirect()->route('countries');
+//        return redirect()->refresh();
+//        return redirect()->back()->with(['countriers' => country::all()]);
 
 //        return Inertia::render('API/Latest/GetLatest', [
 //            'input' => $instance,

@@ -36,5 +36,8 @@ Route::middleware([
 });
 
 Route::get('/countries/', [\App\Http\Controllers\CountryController::class, 'index'])->name('countries');
-Route::post('/country/save/', [\App\Http\Resources\Country::class, 'store'])->name('country.save');
+Route::get('/api/countries/', [\App\Http\Controllers\API\CountryController::class, 'index'])
+    ->name('api.countries');
+Route::post('/country/save/', [\App\Http\Controllers\CountryController::class, 'store'])
+    ->name('country.save');
 Route::get('/regions/', [\App\Http\Controllers\RegionController::class, 'index'])->name('regions');
